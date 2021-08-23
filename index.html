@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .parallax {
+            /* The image used */
+            background-image: url("streamingServicesbackground.jpg");
+
+            /* Set a specific height */
+            min-height: 500px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url("streamingServicesbackground.jpg");
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("streamingServicesbackground.jpg");
+            min-height: 400px;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+    <title>Streaming Services Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="navigationbar">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a href="index.html" class="navbar-brand" class="home_button" id="temporaryID">Home</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a href="ratings.html" class="nav-link">Ratings Across Platforms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="releaseDate.html" class="nav-link">Relationships with Release Dates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Genres.html" class="nav-link">Relationship with Genres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ML.html" class="nav-link">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="other.html" class="nav-link">Placeholder Name</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="search.html" class="nav-link">Search for a Movie</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <!-- Header -->
+                <h1>Streaming Services Analysis</h1>
+                <hr size="8" width="100%" color:"black">
+            </div>
+        </div>
+        <div class="parallax"></div>
+        <div class="row">
+            <div class="col-xs-12  col-md-9">
+                <div id="plot4">
+                    <!-- We append our charts here. -->
+                </div>
+            </div>
+        </div>
+        <div class="bgimg-1"></div>
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
+                <img
+                    src="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=30" />
+            </div>
+            <div class="grid-item">
+                <img src="https://assetshuluimcom-a.akamaihd.net/h3o/facebook_share_thumb_default_hulu.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://media.comicbook.com/2018/11/disney-plus-logo-1143358.jpeg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://i.pcmag.com/imagery/reviews/02dIsBiVpmVTMeXkrKxWy0W-13..1582749138.png" />
+            </div>
+            <div class="grid-item">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" />
+            </div>
+            <div class="grid-item">
+                <img src="https://www.rottentomatoes.com/assets/pizza-pie/head-assets/images/RT_TwitterCard_2018.jpg" />
+            </div>
+        </div>
+        </div>
+        <div class="grid">
+            <!-- width of .grid-sizer used for columnWidth -->
+            <div class="grid-sizer"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--width2"></div>
+            ...
+        </div>
+        <!-- Footer-->
+        <div id="footer">
+            <p>The Coding Boot Camp&copy;2021</p>
+        </div>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script type="text/javascript" src="logic.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
