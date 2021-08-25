@@ -7,13 +7,13 @@
     <style>
         .parallax {
             /* The image used */
-            background-image: url("streamingServicesbackground.jpg");
+            background-image: url("streaming.jpg");
 
             /* Set a specific height */
             min-height: 500px;
 
             /* Create the parallax scrolling effect */
-            background-attachment: fixed;
+            background-attachment: fixed ;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -32,13 +32,15 @@
         }
 
         .bgimg-1 {
-            background-image: url("streamingServicesbackground.jpg");
-            min-height: 100%;
+            background-image: url("streaming.jpg");
+            min-height: 400px !important;
+            width: max 700px !important;
         }
 
         .bgimg-2 {
-            background-image: url("streamingServicesbackground.jpg");
-            min-height: 400px;
+            background-image: url("streaming.jpg");
+            min-height: 400px !important;
+            width: max 700px !important;
         }
 
         /* Turn off parallax scrolling for tablets and phones */
@@ -50,7 +52,9 @@
                 background-attachment: scroll;
             }
         }
+        h1 {text-align: center;}
     </style>
+    
     <title>Streaming Services Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -71,19 +75,19 @@
                 <ul class="nav navbar-nav ml-auto">
                     <ul class="nav navbar-nav">
                         <li class="nav-item">
-                            <a href="ratings.html" class="nav-link">Ratings Across Platforms</a>
+                            <a href="ratings.html" class="nav-link">Ratings</a>
                         </li>
                         <li class="nav-item">
-                            <a href="releaseDate.html" class="nav-link">Relationships with Release Dates</a>
+                            <a href="releaseDate.html" class="nav-link">Release Dates</a>
                         </li>
                         <li class="nav-item">
-                            <a href="Genres.html" class="nav-link">Relationship with Genres</a>
+                            <a href="Genres.html" class="nav-link">Genres</a>
                         </li>
                         <li class="nav-item">
                             <a href="ML.html" class="nav-link">Machine Learning</a>
                         </li>
                         <li class="nav-item">
-                            <a href="other.html" class="nav-link">Placeholder Name</a>
+                            <a href="other.html" class="nav-link">Visualizations</a>
                         </li>
                         <li class="nav-item">
                             <a href="search.html" class="nav-link">Search for a Movie</a>
@@ -105,23 +109,9 @@
         </div>
         <div class="parallax"></div>
         <div class="row">
-            <div class="col-xs-12  col-md-9">
-                <div id="plot1">
-                    <!-- We append our chart here. -->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12  col-md-9">
-                <div id="plot2">
-                    <!-- We append our chart here. -->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12  col-md-9">
-                <div id="plot3">
-                    <!-- We append our chart here. -->
+            <div class="col-md-11  col-md-10">
+                <div id="plot4">
+                    <!-- We append our charts here. -->
                 </div>
             </div>
         </div>

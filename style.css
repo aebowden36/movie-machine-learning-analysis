@@ -8,8 +8,20 @@ body { font-family: sans-serif; }
 /* ---- grid ---- */
 
 .grid {
-  background: #DDD;
+  background: white;
 }
+
+/* home button*/
+.navbar-brand {
+  font-size: 40px;
+}
+/* navbar page names - adding border around each page name */
+
+.nav-link{
+  border-style: solid;
+
+}
+
 
 /* clear fix */
 .grid:after {
@@ -17,7 +29,18 @@ body { font-family: sans-serif; }
   display: block;
   clear: both;
 }
+.bgimg-1 {
+  background-image: url("streaming.jpg");
+  min-height: 100%;
+  width: max(300vw, 300px);
 
+}
+.bgimg-2 {
+  background-image: url("streaming.jpg");
+  min-height: 100%;
+  width: max(300vw, 300px);
+
+}
 /* ---- .grid-item ---- */
 
 .grid-sizer,
@@ -38,4 +61,3 @@ body { font-family: sans-serif; }
 .grid-item { width: 20%; }
 /* 2 columns */
 .grid-item--width2 { width: 40%; }
-
