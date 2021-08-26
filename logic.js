@@ -222,7 +222,7 @@ function buildPlot() {
       
       var data = [traceGenres]
       var layout = {
-        title: "Netflix Genres",
+        title: "Total Genres Across Platforms",
         showlegend: false,
         xaxis: {title: "Genres"},
         yaxis: {title: "Count"}
